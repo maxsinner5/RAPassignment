@@ -1,7 +1,7 @@
 #' Exoplanet dataset
 #'@param exo_planets A dataframe containing all discovered exoplanets up until 2021. We only select those star systems with more than 1 planet, as they are not as dull and uninteresting.
-#'@param col1_of_interest The user can select a column of their choice to check different things about the "interesting star systems.
-#'@param col2_of_interest The users wish is granted and a second column can be chosen to be investigated.
+#'@param col1_of_interest The user can select a column of their choice to check different things about the "interesting star systems. All columns are ok except "Distance' or 'Stellar Mass', as they are already provided
+#'@param col2_of_interest The users wish is granted and a second column can be chosen to be investigated. All columns are ok except "Distance' or 'Stellar Mass', as they are already provided
 #'@importFrom janitor clean_names
 #'@importFrom dplr select filter
 #'@export
@@ -20,6 +20,6 @@ exo_planets_data <- function(exo_planets, col1_of_interest, col2_of_interest ){
   exo_planets |>
     janitor::clean_names() |>
     dplyr::filter(num_planets > 1) |>
-    dplyr::select(stellar_mass, distance, {{col1_of_interest}},{{col2_of_interest}})
+    dplyr::select(planet_name,stellar_mass, distance, {{col1_of_interest}},{{col2_of_interest}})
 
 }
