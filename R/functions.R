@@ -3,7 +3,8 @@
 #'@param col1_of_interest The user can select a column of their choice to check different things about the "interesting star systems. All columns are ok except "Distance' or 'Stellar Mass', as they are already provided
 #'@param col2_of_interest The users wish is granted and a second column can be chosen to be investigated. All columns are ok except "Distance' or 'Stellar Mass', as they are already provided
 #'@importFrom janitor clean_names
-#'@importFrom dplr select filter
+#'@importFrom dplyr select filter
+#'@importFrom readr read_csv
 #'@export
 #'@return A simplified dataframe
 #'@details
