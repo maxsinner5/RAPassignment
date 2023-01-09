@@ -24,5 +24,5 @@ This function returns a very simplified version of the original dataset, such th
 overwhelmed and can digest the different features of the "interesting" planetary systems in great detail.
 }
 \examples{
-exo_planets_data(exo_planets, num_stars, discovery_method)
+exo_planets_data(exo_planets, 'Num Stars', 'Discovery Method')
 }

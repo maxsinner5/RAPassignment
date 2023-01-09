@@ -1,5 +1,4 @@
-
-exo_planets <- readr::read_csv("all_exoplanets_2021.csv")
+exo_planets <- readr::read_csv("https://raw.githubusercontent.com/maxsinner5/RAPassignment/main/data/all_exoplanets_2021.csv")
 
 
 test_that("Function returns a tibble that is nx5",{
