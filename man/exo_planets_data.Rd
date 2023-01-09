@@ -4,10 +4,10 @@
 \alias{exo_planets_data}
 \title{Exoplanet dataset}
 \usage{
-exo_planets_data(all_exoplanets_2021, col1_of_interest, col2_of_interest)
+exo_planets_data(all_exoplanets, col1_of_interest, col2_of_interest)
 }
 \arguments{
-\item{all_exoplanets_2021}{A dataframe containing all discovered exoplanets up until 2021. We only select those star systems with more than 1 planet, as they are not as dull and uninteresting.}
+\item{all_exoplanets}{A dataframe containing all discovered exoplanets up until 2021. We only select those star systems with more than 1 planet, as they are not as dull and uninteresting.}
 
 \item{col1_of_interest}{The user can select a column of their choice to check different things about the "interesting star systems. All columns are ok except "Distance' or 'Stellar Mass', as they are already provided}
 
@@ -24,5 +24,5 @@ This function returns a very simplified version of the original dataset, such th
 overwhelmed and can digest the different features of the "interesting" planetary systems in great detail.
 }
 \examples{
-exo_planets_data(all_exoplanets_2021, num_stars, discovery_method)
+exo_planets_data(all_exoplanets, num_stars, discovery_method)
 }

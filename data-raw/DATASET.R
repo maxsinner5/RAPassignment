@@ -1,5 +1,5 @@
-library(dplyr)
-all_exoplanets_2021 <- readr::read_csv("https://raw.githubusercontent.com/maxsinner5/RAPassignment/main/data/all_exoplanets_2021.csv")
+## code to prepare `DATASET` dataset goes here
 
+all_exoplanets_2021 <- readr::read_csv("")
 
-usethis::use_data(all_exoplanets_2021, overwrite = TRUE)
+usethis::use_data(DATASET, overwrite = TRUE)
