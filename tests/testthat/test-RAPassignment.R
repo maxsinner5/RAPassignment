@@ -15,8 +15,4 @@ test_that("Function returns a tibble that is nx5",{
   expected_value <- 5
 
   expect_equal(returned_value,expected_value)
-
-
-
-
 })

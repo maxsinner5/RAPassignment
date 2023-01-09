@@ -17,8 +17,6 @@
 
 exo_planets_data <- function(all_exoplanets_2021, col1_of_interest, col2_of_interest ){
 
-  all_exoplanets_2021 <- readr::read_csv("https://raw.githubusercontent.com/maxsinner5/RAPassignment/main/data/all_exoplanets_2021.csv")
-
   all_exoplanets_2021 |>
     janitor::clean_names() |>
     dplyr::filter(num_planets > 1) |>
