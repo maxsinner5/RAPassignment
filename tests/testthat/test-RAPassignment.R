@@ -5,7 +5,7 @@ test_that("Function returns a tibble that is nx5",{
 
 
 
-  returned_tibble <- exo_planets_data(all_exoplanets,
+  returned_tibble <- exo_planets_data(all_exoplanets_2021,
                                       num_stars,
                                       discovery_method)
 
